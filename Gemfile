@@ -17,9 +17,9 @@ group :development, :test do
   gem "rubocop-performance", require: false
   gem "rubocop-rails", require: false
   # 次の3つを追加
-  gem 'pry-byebug'
-  gem 'pry-rails'
-  gem 'pry-doc'
+  gem "pry-byebug"
+  gem "pry-doc"
+  gem "pry-rails"
 end
 
 group :development do
