@@ -16,6 +16,10 @@ group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
   gem "rubocop-performance", require: false
   gem "rubocop-rails", require: false
+  # 次の3つを追加
+  gem "pry-byebug"
+  gem "pry-doc"
+  gem "pry-rails"
 end
 
 group :development do
