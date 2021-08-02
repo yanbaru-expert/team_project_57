@@ -3,7 +3,7 @@ class CreateTexts < ActiveRecord::Migration[6.1]
     create_table :texts do |t|
       t.integer :genre, null: false, default: 0
       t.string :title, null: false
-      t.text :contnt, null: false
+      t.text :content, null: false
       t.timestamps
     end
   end
