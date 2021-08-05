@@ -11,3 +11,5 @@ ja:
     attributes:
       text:
         genre: ジャンル
+      movie:
+        genre: ジャンル
