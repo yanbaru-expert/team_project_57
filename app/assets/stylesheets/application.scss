@@ -38,3 +38,7 @@
 .alert-alert {
   @extend .alert-danger;
 }
+
+body {
+  padding-top: 56px;
+}
