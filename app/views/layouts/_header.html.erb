@@ -10,8 +10,8 @@
           Ruby
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <%= link_to "Ruby/Railsテキスト教材", texts_path(genre: "ruby") %>
-          <%= link_to "Ruby/Rails動画教材", movies_path(genre: "ruby") %>
+          <%= link_to "Ruby/Railsテキスト教材", texts_path(genre: "ruby"), class: "dropdown-item" %>
+          <%= link_to "Ruby/Rails動画教材", movies_path(genre: "ruby"), class: "dropdown-item" %>
         </div>
       </li>
       <li class="nav-item active dropdown">
@@ -19,8 +19,8 @@
           PHP
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <%= link_to "PHPテキスト教材", texts_path(genre: "php") %>
-          <%= link_to "PHP動画教材", movies_path(genre: "php") %>
+          <%= link_to "PHPテキスト教材", texts_path(genre: "php"), class: "dropdown-item" %>
+          <%= link_to "PHP動画教材", movies_path(genre: "php"), class: "dropdown-item" %>
         </div>
       </li>
       <% if user_signed_in? %>
