@@ -14,8 +14,8 @@ ActiveAdmin.register Movie do
     attributes_table do
       row :id
       row :genre, :movie, &:genre_i18n
-      column :title
-      column :url
+      row :title
+      row :url
     end
     active_admin_comments
   end

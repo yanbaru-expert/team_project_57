@@ -15,8 +15,8 @@ ActiveAdmin.register Text do
     attributes_table do
       row :id
       row :genre, :text, &:genre_i18n
-      column :title
-      column :content
+      row :title
+      row :content
     end
     active_admin_comments
   end
