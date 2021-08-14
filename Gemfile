@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "2.7.3"
 
+gem "activeadmin"
 gem "bootsnap", ">= 1.4.4", require: false
 gem "devise"
 gem "devise-bootstrap-views", "~>1.0"
@@ -16,7 +17,6 @@ gem "rails-i18n", "~> 6.0"
 gem "sass-rails", ">= 6"
 gem "turbolinks", "~> 5"
 gem "webpacker", "~> 5.0"
-gem "activeadmin"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]

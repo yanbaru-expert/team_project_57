@@ -30,10 +30,9 @@ ActiveAdmin.register Movie do
     f.actions
   end
 
-  filter :genre, as: :select, collection: Movie.genres_i18n.invert.transform_values {|v| Movie.genres[v] }
+  filter :genre, as: :select, collection: Movie.genres_i18n.invert.transform_values { |v| Movie.genres[v] }
   filter :title
   filter :url
   filter :created_at
   filter :updated_at
-  
 end

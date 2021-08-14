@@ -31,10 +31,9 @@ ActiveAdmin.register Text do
     f.actions
   end
 
-  filter :genre, as: :select, collection: Text.genres_i18n.invert.transform_values {|v| Text.genres[v] }
+  filter :genre, as: :select, collection: Text.genres_i18n.invert.transform_values { |v| Text.genres[v] }
   filter :title
   filter :content
   filter :created_at
   filter :updated_at
-  
 end
