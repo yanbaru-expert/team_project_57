@@ -7,7 +7,6 @@ ActiveAdmin.register Text do
     # enum-help を利用
     column :genre, :text, &:genre_i18n
     column :title
-    column :content
     actions
   end
 
@@ -17,6 +16,8 @@ ActiveAdmin.register Text do
       row :genre, :text, &:genre_i18n
       row :title
       row :content
+      row :created_at
+      row :updated_at
     end
     active_admin_comments
   end

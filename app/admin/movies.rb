@@ -16,6 +16,8 @@ ActiveAdmin.register Movie do
       row :genre, :movie, &:genre_i18n
       row :title
       row :url
+      row :created_at
+      row :updated_at
     end
     active_admin_comments
   end
