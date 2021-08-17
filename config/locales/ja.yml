@@ -3,6 +3,17 @@ ja:
     title: タイトル
     content: 内容
     url: URL
+    id: ID
+    namespace: 名前空間
+    resource_type: リソースタイプ
+    resource_id: リソースID
+    author_type: 作成者種別
+    author_id: 作成者ID
+    created_at: 作成日時
+    updated_at: 更新日時
+    body: 本文
+    resource: リソース
+    author: 作成者
 
   activerecord:
     models:
