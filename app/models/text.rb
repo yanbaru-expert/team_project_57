@@ -1,4 +1,5 @@
 class Text < ApplicationRecord
+  has_many :read_progresses, dependent: :destroy
   enum genre: {
     invisible: 0, # 非表示
     basic: 1,
