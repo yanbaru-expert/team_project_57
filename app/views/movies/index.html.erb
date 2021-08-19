@@ -1,5 +1,5 @@
-<%= render partial: "layouts/header"%>
-<h1 class="text-center">Ruby/Rails 動画</h1>
+<%# <%= render partial: "layouts/header"%>
+<%# <h1 class="text-center">Ruby/Rails 動画</h1>
 <div><br>
 </div>
 <div class="container">
@@ -173,4 +173,6 @@
     <div class="card border border-0 border-primary">
     </div>
   </div>
-</div>
+</div> %>
+<h1 class="text-center">Ruby/Rails 動画</h1>
+<%= render partial: "movie", collection: @movies %>
