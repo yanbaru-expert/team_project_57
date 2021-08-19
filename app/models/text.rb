@@ -16,4 +16,8 @@ class Text < ApplicationRecord
     validates :title
     validates :content
   end
+
+  def read_progressed_by?(user)
+    read_progresses.exists?(user_id: user.id)
+  end
 end
