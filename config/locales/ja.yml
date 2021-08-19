@@ -24,3 +24,6 @@ ja:
         genre: ジャンル
       movie:
         genre: ジャンル
+      read_progress:
+        user: ユーザー
+        text: テキスト教材
