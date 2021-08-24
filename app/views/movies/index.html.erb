@@ -1,13 +1,4 @@
-<h1 class="text-center">
-
-<% if movie_genre == "PHP 動画"%>
-  <%="PHP 動画教材"%>
-<% else %>
-  <%="Ruby/Rails 動画教材"%>
-<% end %>
-
-</h1>
-<h1><%= movie_genre %></h1>
+<h1 class="text-center"><%= movie_genre %></h1>
 
 <div class="row">
   <%= render partial: "movie", collection: @movies %>
