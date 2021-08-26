@@ -16,4 +16,9 @@ class Movie < ApplicationRecord
     validates :title
     validates :url
   end
+
+  def watched_by?(user)
+    watch_progresses.exists?(user_id: user.id)
+    # watch_progresses.any? { |watch_progress| watch_progress.user_id == user.id }
+  end
 end
