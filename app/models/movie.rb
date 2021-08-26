@@ -1,4 +1,5 @@
 class Movie < ApplicationRecord
+  has_many :watch_progresses, dependent: :destroy
   enum genre: {
     invisible: 0, # 非表示
     basic: 1,
