@@ -1,6 +1,10 @@
 class TextsController < ApplicationController
   def index
-    @texts = Text.where(genre: Text::RAILS_GENRE_LIST).includes(:read_progresses).order(:created_at)
+    @texts = if params[:genre] == "php"
+               Text.where(genre: Text::PHP_GENRE_LIST).includes(:read_progresses).order(:created_at)
+             else
+               Text.where(genre: Text::RAILS_GENRE_LIST).includes(:read_progresses).order(:created_at)
+             end
   end
 
   def show

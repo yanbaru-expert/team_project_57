@@ -10,6 +10,7 @@ class Movie < ApplicationRecord
   }
 
   RAILS_GENRE_LIST = %w[basic git ruby rails].freeze
+  PHP_GENRE_LIST = %w[php].freeze
 
   with_options presence: true do
     validates :genre
