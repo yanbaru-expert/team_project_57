@@ -1,4 +1,5 @@
 class Movie < ApplicationRecord
+  has_many :watch_progresses, dependent: :destroy
   enum genre: {
     invisible: 0, # 非表示
     basic: 1,
@@ -15,5 +16,9 @@ class Movie < ApplicationRecord
     validates :genre
     validates :title
     validates :url
+  end
+
+  def watched_by?(user)
+    watch_progresses.any? { |watch_progress| watch_progress.user_id == user.id }
   end
 end
