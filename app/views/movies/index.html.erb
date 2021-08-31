@@ -1,5 +1,7 @@
-<h1 class="text-center"><%= movie_genre %></h1>
-
-<div class="row">
-  <%= render partial: "movie", collection: @movies %>
+<div class="container">
+  <h1 class="text-center"><%= movie_genre %></h1>
+  <div class="row">
+    <%= render partial: "movie", collection: @movies %>
+  </div>
+  <%= paginate @movies %>
 </div>

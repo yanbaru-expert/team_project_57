@@ -18,6 +18,14 @@ class Movie < ApplicationRecord
     validates :url
   end
 
+  def self.filter_by(genre)
+    if genre == "php"
+      Movie.where(genre: Movie::PHP_GENRE_LIST)
+    else
+      Movie.where(genre: Movie::RAILS_GENRE_LIST)
+    end
+  end
+
   def watched_by?(user)
     watch_progresses.any? { |watch_progress| watch_progress.user_id == user.id }
   end
